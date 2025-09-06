@@ -1,0 +1,13 @@
+* { box-sizing: border-box }
+body { margin: 0; background: #f7fafc; color: #0f172a }
+input, select, textarea, button { font-family: inherit }
+header { margin-bottom: 16px }
+form { background: white; padding: 16px; border-radius: 8px; box-shadow: 0 1px 4px rgba(2,6,23,0.06) }
+.field { margin-bottom: 12px }
+label { display:block; font-weight:600; margin-bottom:6px }
+input[type='text'], input[type='email'], select, textarea { width:100%; padding:8px; border:1px solid #e6edf3; border-radius:6px }
+.small { font-size: 0.9rem; color: #475569 }
+.error { color: #b91c1c; font-size:0.9rem }
+button { background:#0ea5a4; color:white; border: none; padding:10px 16px; border-radius:6px; cursor:pointer }
+button[disabled] { opacity:0.55; cursor:not-allowed }
+</style>
