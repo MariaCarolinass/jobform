@@ -111,8 +111,7 @@ npm run dev
 Os testes usam Pytest com **diretório temporário para uploads**:
 
 ```bash
-cd backend
-pytest tests
+PYTHONPATH=backend pytest backend/tests
 ```
 
 Testes cobrem:
