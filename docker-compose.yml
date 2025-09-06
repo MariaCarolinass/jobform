@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend:
+    build: ./backend
+    container_name: jobform_backend
+    restart: always
+    env_file: .env
+    volumes:
+      - ./backend:/app
+      - ./backend/jobform.db:/app/jobform.db
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    container_name: jobform_frontend
+    restart: always
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
